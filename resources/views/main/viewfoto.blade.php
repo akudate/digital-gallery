@@ -68,7 +68,7 @@
                             <div class="p-4 md:p-5 space-y-4 border-b dark:border-gray-600 dark:text-white">
                                 {{$foto->deskripsi}}
                             </div>
-                            <div class="p-4 md:p-5 space-y-4">
+                            <div class="max-h-64 overflow-y-auto p-4 md:p-5 space-y-4">
                                 @if ($komentar->isNotEmpty())
                                     @foreach ($komentar as $item)
                                         <div class="flex items-center gap-4">
