@@ -2,6 +2,11 @@
 @section('content')
 <div>
     <div class="flex justify-center">
+        <div class="d-flex justify-content-end mr-10">
+            <a href="/" class="nav-link">
+                <i class="fa-solid fa-circle-arrow-left fa-2xl text-gray-800 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-200 shadow"></i>
+            </a>
+        </div>
         <div class="max-w-4xl h-auto w-full rounded-2xl mb-10">
             <div class="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -65,7 +70,10 @@
                                 @endif
                             </div>
 
-                            <div class="p-4 md:p-5 space-y-4 border-b dark:border-gray-600 dark:text-white">
+                            <div class="px-4 md:px-5 pt-4 md:pt-5 space-y-4 dark:text-white font-semibold">
+                                {{$foto->judul}}
+                            </div>
+                            <div class="px-4 md:px-5 pb-4 md:pb-5 pt-2 space-y-4 border-b dark:border-gray-600 dark:text-white">
                                 {{$foto->deskripsi}}
                             </div>
                             <div class="max-h-64 overflow-y-auto p-4 md:p-5 space-y-4">
